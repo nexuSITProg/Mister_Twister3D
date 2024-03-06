@@ -1,0 +1,217 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg: #fffdf6;
+    --header: #7c7e9d;
+    --footer: #949AB1;
+    --button: #e2d4e0;
+    --text: #4c5372;  
+    --footer__text: #2b2d38;  
+}
+
+/* ------------------------------------ HEADER ------------------------------------- */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    height: 75px;
+    background-color: var(--header);
+}
+
+/* ------------------------------------ MAIN CONTENT ------------------------------------- */
+
+.main_content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-image: var(--bg);
+    height: 500px;
+}
+
+/* ------------------------------------ START BUTTON ------------------------------------- */
+
+.slider-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+  
+.slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    align-items: center;
+    justify-content: center;
+}
+  
+.prev-button, .next-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    border: none;
+    font-size: 24px;
+    color: black;
+}
+  
+.prev-button {
+    left: 10px;
+}
+  
+.next-button {
+    right: 10px;
+}
+
+.wheel {
+    position: absolute;
+    width: 60vw;
+    height: 60vw;
+    border-radius: 50%;
+    box-shadow: 0 0 5px 5px #333, 
+    0 0 0 15px #fff,
+    0 0 0 17px #111;
+    overflow: hidden;
+    transition: transform 5s ease-in-out;
+}
+
+.main_content .wheel .color {
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    background-color: var(--clr);
+    transform-origin: bottom right;
+    transform: rotate(calc(90deg*var(--i)));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main_content .wheel .body_part {
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    background-color: var(--clr);
+    transform-origin: bottom right;
+    transform: rotate(calc(90deg*var(--i)));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main_content .wheel .position {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    background-color: var(--clr);
+    transform-origin: right;
+    transform: rotate(calc(180deg*var(--i)));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.color span {
+    font-family: 'Ubuntu', sans-serif;
+    position: relative;
+    font-size: 1.2em;
+    font-weight: 900;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.body_part span {
+    font-family: 'Ubuntu', sans-serif;
+    position: relative;
+    font-size: 1.2em;
+    font-weight: 900;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.position span {
+    font-family: 'Ubuntu', sans-serif;
+    position: relative;
+    font-size: 1.2em;
+    font-weight: 900;
+}
+
+.rotatue45 {
+    transform: rotate(45deg);
+}
+
+.rotatue225 {
+    transform: rotate(225deg);
+}
+
+.to_rotate {
+    transform: rotate(180deg);
+}
+
+.spin_button {
+    display: flex;
+    position: absolute;
+    z-index: 1;
+    background-color: #fff;
+    border: #111 3px solid;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    user-select: none;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 900;
+    transition: transform 5s ease-in-out;
+}
+
+.spin_button::before {
+    content: '';
+    position: absolute;
+    top: -24px;
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    clip-path: polygon(50% 0%, 15% 100%, 85% 100%);
+}
+
+/* ------------------------------------ FOOTER ------------------------------------- */
+
+.footer {
+    background-color: var(--footer);
+    color: var(--footer__text);
+}
+
+.footer__text__container {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__text {
+    margin: 0 20px;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 10pt;
+    font-weight: 900;
+    user-select: none; 
+}
+
+.developer {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.with_love {
+    margin-top: 20px;    
+    font-size: 12pt;
+}
