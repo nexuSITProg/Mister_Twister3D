@@ -123,7 +123,7 @@
 .color span {
     font-family: 'Ubuntu', sans-serif;
     position: relative;
-    font-size: 1.2em;
+    font-size: 0.8em;
     font-weight: 900;
     margin-left: 20px;
     margin-top: 20px;
@@ -132,7 +132,7 @@
 .body_part span {
     font-family: 'Ubuntu', sans-serif;
     position: relative;
-    font-size: 1.2em;
+    font-size: 0.8em;
     font-weight: 900;
     margin-left: 20px;
     margin-top: 20px;
@@ -141,7 +141,7 @@
 .position span {
     font-family: 'Ubuntu', sans-serif;
     position: relative;
-    font-size: 1.2em;
+    font-size: 0.8em;
     font-weight: 900;
 }
 
