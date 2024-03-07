@@ -31,7 +31,7 @@
     flex-direction: column;
     justify-content: center;
     background-image: var(--bg);
-    height: 500px;
+    height: 77vh;
 }
 
 /* ------------------------------------ START BUTTON ------------------------------------- */
@@ -123,7 +123,7 @@
 .color span {
     font-family: 'Ubuntu', sans-serif;
     position: relative;
-    font-size: 0.8em;
+    font-size: 4vw;
     font-weight: 900;
     margin-left: 20px;
     margin-top: 20px;
@@ -132,7 +132,7 @@
 .body_part span {
     font-family: 'Ubuntu', sans-serif;
     position: relative;
-    font-size: 0.8em;
+    font-size: 4vw;
     font-weight: 900;
     margin-left: 20px;
     margin-top: 20px;
@@ -141,7 +141,7 @@
 .position span {
     font-family: 'Ubuntu', sans-serif;
     position: relative;
-    font-size: 0.8em;
+    font-size: 5vw;
     font-weight: 900;
 }
 
@@ -187,6 +187,12 @@
 }
 
 /* ------------------------------------ FOOTER ------------------------------------- */
+
+footer {
+    position: relative;
+    width: 100%;
+    flex: 0 0 auto;
+}
 
 .footer {
     background-color: var(--footer);

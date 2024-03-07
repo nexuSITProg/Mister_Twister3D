@@ -8,8 +8,7 @@ const slideCount = wheels.length;
 let slideIndex = 0;
 
 // Для колеса
-let rand = Math.ceil(Math.random() * 360);
-let rotateValue = rand + 1800;
+let rand = Math.ceil(Math.random() * 360) + 1800;
 
 // Кнопки вращения 
 spinButtons.forEach((spinButton, index) => {
@@ -17,9 +16,8 @@ spinButtons.forEach((spinButton, index) => {
 });
 
 function rotate_button(index) {
-    spinButtons[index].setAttribute('style', 'transform: rotate(' + rotateValue + 'deg)')
-    rand = Math.ceil(Math.random() * 360);
-    rotateValue += rand + 1800;
+    spinButtons[index].setAttribute('style', 'transform: rotate(' + rand +'deg)')
+    rand = Math.ceil(Math.random() * 360) + 1800;
 }
 
 // Устанавливаем обработчики событий для кнопок
