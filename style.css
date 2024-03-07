@@ -173,7 +173,7 @@
     user-select: none;
     font-family: "Ubuntu", sans-serif;
     font-weight: 900;
-    transition: transform 5s ease-in-out;
+    transition: transform 3s ease-in-out;
 }
 
 .spin_button::before {
